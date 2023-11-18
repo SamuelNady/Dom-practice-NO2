@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container {
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    margin: 20px;
+    border: 2px black solid;
+    height: 100vh;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(35deg, #a75d5d, #ffc3a1);
+    border-radius: 50%;
+}
+
+.tr {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.bl {
+    align-items: flex-end;
+}
+
+.br {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: #407bff;
+    background-color: #407bff;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.container .par {
+    display: flex;
+}
+
+.container .par .item {
+    width: 48%;
+}
+
+.container .par .item:nth-child(2) {
+    background-image: linear-gradient(35deg, #a75d5d, #ffc3a1);
+    height: 400px;
+}
+
+.container .par .item .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .par .item .row:nth-child(2) {
+    margin-top: 20px;
+}
+
+.container .par .item .row .child{
+    width: 30%;
+    height: 190px;
+    background-image: linear-gradient(35deg, #a75d5d, #ffc3a1);
+}
+
+.res {
+    flex-direction: column;
+}
+
+.res .child {
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
